@@ -1,0 +1,10 @@
+
+/* colors */
+:root {
+  --tab-line-color: --tab-line-color;
+}
+
+.bookmark-item:hover > .toolbarbutton-icon
+{
+	background-color: rgba(200,200,200,0.2) !important;
+}

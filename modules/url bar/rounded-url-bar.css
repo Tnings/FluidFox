@@ -1,0 +1,26 @@
+#urlbar-background
+{
+    padding: 1px !important;
+
+    box-shadow: inset 0px 0px 1px 0px #e3e3e3 !important;
+    border-radius: 30px !important;
+}
+
+#tracking-protection-icon-container{
+  border-radius: 30px !important;
+}
+
+#identity-icon-box{
+  border-radius: 30px !important;
+}
+
+#identity-permission-box{
+  border-radius: 30px !important;
+}
+
+#star-button-box{
+  border-radius: 30px !important;
+}
+.tooltip-label {
+  
+}

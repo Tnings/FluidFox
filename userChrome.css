@@ -1,0 +1,35 @@
+/* FluidFox */
+/* By May!! */
+
+/*---Vibrancy---*/
+/* Note: These settings are only supported on MacOS. */
+
+/* Tab Bar Vibrancy */ /* @import "modules/vibrancy/tab-bar.css"; /* */
+/* Nav Bar Vibrancy */ /* @import "modules/vibrancy/nav-bar.css"; /* */
+/* Bookmark Bar Vibrancy */ /* @import "modules/vibrancy/bookmark-bar.css"; /* */
+
+/*---Themes---*/
+/* Note: Please set your FireFox Theme to the Default Dark theme when labeled Dark,
+         and the Default Light theme when labeled Light! The themes wont work correctly unless you do that! */
+
+/* FireFoxTheme (Default) */ /* @import "themes/firefoxtheme.css"; /* */
+/* Gruvbox */ /* @import "themes/gruvbox.css"; /* Dark */
+/* Solazired Dark */ /* @import "themes/solarized-dark.css"; /* Dark */
+/* Solazired Light */ @import "themes/solarized-light.css"; /* Light */
+/* GitHub Dark */ /* @import "themes/github-dark.css"; /* Dark */
+/* GitHub Light */ /* @import "themes/github-light.css"; /* Light */
+
+/*---Browser Tabs--- */
+/* Rounded Tabs */ @import "modules/tabs/rounded-tabs.css"; /* */
+/* Smart Tab Colors */ @import "modules/tabs/smart-tab-colors.css"; /* */
+/*---Url Bar---*/
+/* Rounded Url Bar */ @import "modules/url bar/rounded-url-bar.css"; /* */
+
+/*---Nav Bar---*/
+/* Rounded Icons */ @import "modules/nav bar/rounded-icons.css"; /* */
+
+/*---Bookmark Bar---*/
+/* Centered Bookmarks */ @import "modules/bookmark bar/centered-bookmarks.css"; /* */
+/* Fancy Bookmarks */ @import "modules/bookmark bar/fancy-bookmarks.css"; /* */
+
+/*---Extra Mods---*/

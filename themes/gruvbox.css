@@ -1,0 +1,163 @@
+
+/* colors */
+:root {
+	--bgcolor: 40, 40, 40;
+  --selectedtabcolor: 60, 56, 54;
+  --selectedurlbarcolor: 80, 73, 69;
+  --urlbartextcolor: 251, 241, 199;
+  --bordercolor: 214, 93, 14;
+  --accentcolor: 215, 153, 33;
+  --accentcolor2: 146, 131, 116;
+
+	--private-bgcolor: 40, 40, 40;
+  --private-selectedtabcolor: 58, 54, 60;
+  --private-selectedurlbarcolor: 77, 69, 80;
+  --private-urlbartextcolor: 235, 199, 251;
+  --private-bordercolor: 141, 14, 214;
+  --private-accentcolor: 139, 33, 215;
+  --private-accentcolor2: 132, 116, 146;
+}
+
+:root{
+  /*-Bg colors-*/
+  --lwt-accent-color: rgb(var(--bgcolor)) !important;
+  --toolbar-bgcolor: rgb(var(--bgcolor)) !important;
+
+	/* Nav Bar */
+	--button-hover-bgcolor: rgba(var(--accentcolor),0.2) !important;
+	--arrowpanel-background: rgb(var(--selectedurlbarcolor)) !important;
+	--arrowpanel-border-color: rgba(var(--bordercolor),0) !important;
+	--button-bgcolor: rgb(var(--selectedtabcolor)) !important;
+	--zoom-controls-bgcolor: rgb(var(--selectedtabcolor)) !important;
+	--button-active-bgcolor: rgba(var(--accentcolor),0.5) !important;
+
+  /*-Tabs-*/
+
+  /*-Url Bar color-*/
+  /* Bg Unfocused */ --lwt-toolbar-field-background-color: rgb(var(--selectedtabcolor)) !important;
+  /* Bg focused */ --lwt-toolbar-field-focus: rgb(var(--selectedurlbarcolor)) !important;
+  /* Text Color */ --lwt-toolbar-field-color: rgb(var(--urlbartextcolor)) !important;
+  /* Focus Outline Color */ --focus-outline-color: rgb(var(--accentcolor)) !important;
+  /* Popup Url Color */ --lwt-popup-brighttext-url-color: rgb(var(--accentcolor)) !important;
+	--autocomplete-popup-highlight-background: rgb(var(--selectedtabcolor)) !important;
+}
+
+/* Gradient */
+:root{ --panel-separator-zap-gradient: linear-gradient(90deg,rgb(var(--accentcolor)),rgb(var(--urlbartextcolor))) !important }
+
+tab[selected="true"] .tab-content {
+	color: rgb(var(--accentcolor)) !important;
+}
+
+.tab-content {
+	color: rgb(var(--accentcolor2)) !important;
+}
+
+tab[selected="true"] .tab-background {
+	background: rgb(var(--selectedtabcolor)) !important;
+}
+
+#tabs-newtab-button:hover .toolbarbutton-icon {
+  background-color: rgba(var(--accentcolor),0.3) !important;
+}
+
+#tabs-newtab-button:active .toolbarbutton-icon {
+  background-color: rgba(var(--accentcolor),0.9) !important;
+}
+
+.bookmark-item:hover > .toolbarbutton-icon
+{
+	background-color: rgba(var(--accentcolor),0.2) !important;
+}
+
+.bookmark-item:active > .toolbarbutton-icon
+{
+	background-color: rgba(var(--accentcolor),0.6) !important;
+}
+
+.bookmark-item:hover > .toolbarbutton-text {
+	color: rgba(var(--accentcolor,0.7)) !important;
+}
+
+.bookmark-item:active > .toolbarbutton-text {
+	color: rgba(var(--accentcolor,1)) !important;
+}
+.tab-content {
+	transition: color 0.3s ease !important;
+}
+.tab-content:hover {
+	color: rgba(var(--accentcolor),0.9) !important;
+}
+
+/*---Private Browsing Colors---*/
+:root[privatebrowsingmode=temporary] {
+  /*-Bg colors-*/
+	--lwt-accent-color: rgb(var(--private-bgcolor)) !important;
+  --toolbar-bgcolor: rgb(var(--private-bgcolor)) !important;
+
+	/* Nav Bar */
+	--button-hover-bgcolor: rgba(var(--private-accentcolor),0.2) !important;
+	--arrowpanel-background: rgb(var(--private-selectedurlbarcolor)) !important;
+	--arrowpanel-border-color: rgba(var(--private-bordercolor),0) !important;
+	--button-bgcolor: rgb(var(--private-selectedtabcolor)) !important;
+	--zoom-controls-bgcolor: rgb(var(--private-selectedtabcolor)) !important;
+	--button-active-bgcolor: rgba(var(--private-accentcolor),0.5) !important;
+
+  /*-Tabs-*/
+
+
+  /*-Url Bar color-*/
+  /* Bg Unfocused */ --lwt-toolbar-field-background-color: rgb(var(--private-selectedtabcolor)) !important;
+  /* Bg focused */ --lwt-toolbar-field-focus: rgb(var(--private-selectedurlbarcolor)) !important;
+  /* Text Color */ --lwt-toolbar-field-color: rgb(var(--private-urlbartextcolor)) !important;
+  /* Focus Outline Color */ --focus-outline-color: rgb(var(--private-accentcolor)) !important;
+  /* Popup Url Color */ --lwt-popup-brighttext-url-color: rgb(var(--private-urlbarurlcolor)) !important;
+	--autocomplete-popup-highlight-background: rgb(var(--private-selectedtabcolor)) !important;
+}
+
+/* Gradient */
+:root[privatebrowsingmode=temporary]{ --panel-separator-zap-gradient: linear-gradient(90deg,rgb(var(--private-accentcolor)),rgb(var(--private-urlbartextcolor))) !important }
+
+#main-window[privatebrowsingmode="temporary"] tab[selected="true"] .tab-content {
+	color: rgb(var(--private-accentcolor)) !important;
+}
+
+.tab-content {
+	color: rgb(var(--private-accentcolor2)) !important;
+}
+
+#main-window[privatebrowsingmode="temporary"] tab[selected="true"] .tab-background {
+	background: rgb(var(--private-selectedtabcolor)) !important;
+}
+
+#main-window[privatebrowsingmode="temporary"] #tabs-newtab-button:hover .toolbarbutton-icon {
+  background-color: rgba(var(--private-accentcolor),0.3) !important;
+}
+
+#main-window[privatebrowsingmode="temporary"] #tabs-newtab-button:active .toolbarbutton-icon {
+  background-color: rgba(var(--private-accentcolor),0.9) !important;
+}
+
+#main-window[privatebrowsingmode="temporary"] .bookmark-item:hover > .toolbarbutton-icon
+{
+	background-color: rgba(var(--private-accentcolor),0.2) !important;
+}
+
+#main-window[privatebrowsingmode="temporary"] .bookmark-item:active > .toolbarbutton-icon
+{
+	background-color: rgba(var(--private-accentcolor),0.6) !important;
+}
+
+#main-window[privatebrowsingmode="temporary"] .bookmark-item:hover > .toolbarbutton-text {
+	color: rgba(var(--private-accentcolor,0.7)) !important;
+}
+
+#main-window[privatebrowsingmode="temporary"] .bookmark-item:active > .toolbarbutton-text {
+	color: rgba(var(--private-accentcolor,1)) !important;
+}
+#main-window[privatebrowsingmode="temporary"].tab-content {
+	transition: color 0.3s ease !important;
+}
+#main-window[privatebrowsingmode="temporary"].tab-content:hover {
+	color: rgba(var(--accentcolor),0.9) !important;
+}

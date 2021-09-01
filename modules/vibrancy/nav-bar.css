@@ -1,0 +1,16 @@
+#main-window {
+    background: transparent !important;
+}
+
+:root #nav-bar {
+ -moz-appearance: -moz-mac-vibrant-titlebar-dark !important;
+ -moz-font-smoothing-background-color: -moz-mac-vibrant-titlebar-dark !important;
+}
+
+.tabbrowser-tab[selected="true"] .tab-background:-moz-lwtheme-brighttext {
+    box-shadow: inset 0em -4em 0em var(--toolbar-bgcolor) !important;
+}
+
+#navigator-toolbox {
+    background-color: transparent !important;
+}
