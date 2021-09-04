@@ -1,5 +1,5 @@
 .bookmark-item{
-  border-radius: 30px !important;
+  background: transparent !important;
   transform: translate(0,-1px);
 }
 

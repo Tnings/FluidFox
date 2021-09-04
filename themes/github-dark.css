@@ -6,7 +6,7 @@
   --selectedurlbarcolor: 56, 64, 71;
   --urlbartextcolor: 225, 228, 232;
   --bordercolor: 214, 93, 14;
-  --accentcolor: 239, 125, 105;
+  --accentcolor: 138, 73, 61;
   --accentcolor2: 189, 99, 83;
 
 	--private-bgcolor: 56, 47, 61;
@@ -122,7 +122,7 @@ tab[selected="true"] .tab-background {
 	color: rgb(var(--private-accentcolor)) !important;
 }
 
-.tab-content {
+#main-window[privatebrowsingmode="temporary"] .tab-content {
 	color: rgb(var(--private-accentcolor2)) !important;
 }
 

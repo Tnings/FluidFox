@@ -39,6 +39,7 @@
   /* Text Color */ --lwt-toolbar-field-color: rgb(var(--urlbartextcolor)) !important;
   /* Focus Outline Color */ --focus-outline-color: rgb(var(--accentcolor)) !important;
   /* Popup Url Color */ --lwt-popup-brighttext-url-color: rgb(var(--selectedtabcolor)) !important;
+	--autocomplete-popup-hover-background: rgba(var(--accentcolor),0.2) !important;
 	--autocomplete-popup-highlight-background: rgb(var(--selectedtabcolor)) !important;
 }
 
